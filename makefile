@@ -1,5 +1,5 @@
 regular:
-	gcc -o sobel sobel.c -lm
+	gcc -D_REENTERANT -o sobel sobel.c -lm -lpthread
 
 memsan:
-	gcc -o sobel_m sobel.c -fsanitize=address -lm
+	gcc -D_REENTERANT -o sobel_m sobel.c -fsanitize=address -lm -lpthread
