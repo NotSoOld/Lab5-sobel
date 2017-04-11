@@ -1,0 +1,41 @@
+Input image: 6000x4000, 3 pixel contents
+
+./sobel images/3.jpg 1
+Elapsed time: 3.500 s
+
+./sobel images/3.jpg 2
+Elapsed time: 1.818 s
+
+./sobel images/3.jpg 3
+Elapsed time: 1.324 s
+
+./sobel images/3.jpg 4
+Elapsed time: 1.089 s
+
+./sobel images/3.jpg 5
+Elapsed time: 0.896 s
+
+./sobel images/3.jpg 6
+Elapsed time: 0.761 s
+
+./sobel images/3.jpg 7
+Elapsed time: 0.821 s
+
+./sobel images/3.jpg 8
+Elapsed time: 0.896 s
+
+./sobel images/3.jpg 9
+Elapsed time: 0.804 s
+
+./sobel images/3.jpg 10
+Elapsed time: 0.817 s
+
+./sobel images/3.jpg 15
+Elapsed time: 0.757 s
+
+./sobel images/3.jpg 20
+Elapsed time: 0.758 s
+
+./sobel images/3.jpg 30
+Elapsed time: 0.752 s
+
