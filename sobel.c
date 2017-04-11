@@ -1,6 +1,5 @@
 #define _REENTRANT
 
-#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -78,7 +77,7 @@ void *SobelThread(void *id)
 		for (j = 3; j < x*3-3; j += 3) {		     
 			Gx = Convolute(kX, img + i*x*3+j, x*3);
 			Gy = Convolute(kY, img + i*x*3+j, x*3);
-			sobelImg[(i-1)*(x-2)+((int)(j/3)-1)] = (byte)(sqrt(Gx*Gx + Gy*Gy));
+			sobelImg[(i-1)*(x-2)+ j/3 - 1] = (byte)(sqrt(Gx*Gx + Gy*Gy));
 		}
 	}
 	pthread_exit(NULL);
